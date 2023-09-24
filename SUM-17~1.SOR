@@ -1,0 +1,20 @@
+let n=userInput[0],ans='';
+let b=[]
+//let a1=userInput[2],a2=userInput[4],a3=userInput[6],ans=''
+for(j=1;j<=n*2;j++){
+    
+let a1=userInput[j+1]
+a1=a1.split(' ')
+a1=a1.sort(function(a,b){return a-b})
+
+b+=a1+',';
+console.log(b)
+
+j++;
+}
+b=b.split(',')
+console.log(b)
+for(i=0;i<b.length;i++){
+   ans+=b[i]+' ';
+}
+console.log(ans.trim())

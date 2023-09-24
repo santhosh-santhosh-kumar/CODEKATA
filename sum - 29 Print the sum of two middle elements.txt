@@ -1,0 +1,23 @@
+/*You are given two arrays of equal length. Your task is to merge the two arrays then sort them too and then find the sum of two middlemost elements.
+
+Input Description:
+You are given a number ‘n’. Then Next line contains first list of 'n' separated numbers.Third line contains second list of 'n' space separated numbers.
+
+Output Description:
+Print the sum of two middle elements
+
+Sample Input :
+5
+1 9 16 25 46
+2 3 4 5 6
+Sample Output :
+11*/
+//1 2 3 4 5 6 9 16 25 46
+let n=userInput[0],a1=userInput[1],a2=userInput[2]
+a1=a1.split(' ')
+a2=a2.split(' ')
+let a3=a1.concat(a2)
+a3=a3.sort(function(a,b){return a-b})
+let length=a3.length/2
+let result=parseInt(a3[length-1])+parseInt(a3[length])
+console.log(result)

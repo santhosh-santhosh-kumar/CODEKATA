@@ -1,0 +1,12 @@
+let n=userInput[0],a1=userInput[1],a2=userInput[2],ans='';
+n=n.split(' ')
+a1=a1.split(' ')
+a2=a2.split(' ')
+a1=a1.sort(function(a,b){return a-b})
+a2=a2.sort(function(a,b){return b-a})
+let a3=a1.concat(a2)
+for(i=0;i<a3.length;i++){
+    ans+=a3[i]+' '
+}
+ans=ans.trim()
+console.log(ans)

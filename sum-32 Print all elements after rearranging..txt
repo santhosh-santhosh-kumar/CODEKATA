@@ -1,0 +1,25 @@
+/*You are given with a list of size ‘n’. The list is imposed with a condition that all elements must be of range 0 to n-1.Your task is to rearrange the numbers such that arr[i] becomes arr[arr[i]].
+
+Input Description:
+You are given size of array ‘n’.n space separated numbers in next line.
+
+Output Description:
+Print all elements after rearranging.
+
+Sample Input :
+5
+4 0 2 1 3
+Sample Output :
+3 4 2 0 1*/
+let n=userInput[0],a=userInput[1],temp=[],ans=' '
+a=a.split(' ')
+for(i=0;i<a.length;i++){
+    for(j=0;j<a.length;j++)
+    if(a[i]==j){
+        temp[i]=a[j]
+    }
+    ans+=temp[i]+' '
+}
+console.log(ans.trim())
+
+    

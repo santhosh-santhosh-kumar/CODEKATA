@@ -1,0 +1,17 @@
+//2 10
+//1 10
+ let n=userInput[0],a=userInput[1],ans=0,cond=true;
+ a=a.split(' ')
+ for(i=0;i<a.length;i++){
+     a[i]=parseInt(a[i])
+     if(a[i]<0)
+     {
+         ans+=a[i]
+         cond=false;
+}
+ }
+ if(cond==true){
+     console.log('0')
+ }else{
+ console.log(ans)
+ }

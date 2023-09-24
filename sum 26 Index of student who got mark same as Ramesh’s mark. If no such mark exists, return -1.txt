@@ -1,0 +1,19 @@
+//2 10
+//1 10
+ let n=userInput[0],a=userInput[1],ans=''
+ n=n.split(' ');
+ a=a.split(' ')
+ let cond=true;
+ n[1]=parseInt(n[1])
+ for(i=0;i<a.length;i++){
+     a[i]=parseInt(a[i])
+     if(n[1]==a[i])
+     {
+         ans+=i+' '
+         cond=false;
+     }
+}
+ if(cond==true){
+     console.log('-1')
+ }
+      console.log(ans.trim())

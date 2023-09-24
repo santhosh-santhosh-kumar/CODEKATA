@@ -1,0 +1,18 @@
+let n=userInput[0],a=userInput[1],ans1,ans2;
+a=a.split(' ');
+let min=Infinity;
+let max=Number.MIN_VALUE;
+for(i=0;i<a.length;i++){
+    a[i]=parseInt(a[i])
+    if(a[i]<min){
+        min=a[i]
+        ans1=i;
+        
+    }
+    if(a[i]>max){
+        max=a[i]
+        ans2=i
+    }
+}
+let result=ans2-ans1
+console.log(result)

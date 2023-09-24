@@ -1,0 +1,21 @@
+//input
+//3
+//Karthik 23000 rohan 81734 varshini 12343
+let n=userInput[0],a=userInput[1]
+let j=0
+a=a.split(' '),b=[];
+for(i=1;i<=n*2;i++){
+    
+    b[j]=a[i];
+    i++;
+    j++;
+}
+b=b.sort()
+for(j=0;j<b.length;j++){
+    for(k=0;k<a.length;k++){
+    if(b[j]==a[k]){
+        console.log(a[k-1])
+        break;
+    }
+}
+}

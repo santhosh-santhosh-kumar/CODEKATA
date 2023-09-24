@@ -1,0 +1,12 @@
+//3
+//82 96 72
+let n=userInput[0],a=userInput[1]
+a=a.split(' ')
+max=Number.MIN_VALUE;
+for(i=0;i<a.length;i++){
+    a[i]=parseInt(a[i])
+if(a[i]>max){
+max=a[i]
+}
+}
+console.log(max)

@@ -1,0 +1,9 @@
+//input
+//InfinityWar EndGame Avengers
+let n=userInput[0],a=userInput[1],ans=''
+a=a.split(' ')
+a=a.sort();
+for(i=0;i<a.length;i++){
+    ans+=a[i]+' '
+}
+console.log(ans.trim())
